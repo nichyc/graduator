@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}Graduator - Home{% endblock %}
+
+{% block content %}
+	<h1>Welcome</h1>
+
+<p>This web-app is designed to help you determine which classes<br>will fulfill the most of your unfinished graduation requirements<br>that you still have to complete.</p>
+
+<p>So far, this app is still in its Alpha stage. It will only<br>help with "Ethnicity" and "American History and Institutions" (AHI)<br> requirements for the College of Letters and Sciences.
+<br>More classes will come in the future.</p>
+
+<h3>Please Select Which Requirement(s) You Need:</h3>
+<p>For blank menu selections, choose "None".</p>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Requirement
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Ethnicity</a>
+    <a class="dropdown-item" href="#">American History and Institutions</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">None</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Requirement
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Ethnicity</a>
+    <a class="dropdown-item" href="#">American History and Institutions</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">None</a>
+  </div>
+</div>
+
+	<ul>
+		<li><a href="/results">Submit!</a></li>
+	</ul>
+
+{% endblock %}
