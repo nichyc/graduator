@@ -1,12 +1,19 @@
 <!doctype html>
 <html>
 <head>
-	<title>Memory Quiz</title>
+	<title>Graduator 9000</title>
 </head>
 
 <body>	
+	{% if session['error']==True %}<div id="warning"><font color="red">Warning: Please select two or more requirements!</font></div>{% endif %}
+	
 	<div id="content">{% block content %}{% endblock %}</div>
+	
+	
+	<div style="position: relative; width: 600px; height: 330px;">    
+		<div style="position: absolute; bottom: 5px; color: grey">
+		Alpha Version 1.0 Created by Nicholas Capsimalis. All Rights Reserved. Created with permission from the University of California, Santa Barbara.
+		</div>
+	</div>
 </body>
-
-
 </html>

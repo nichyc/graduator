@@ -3,6 +3,14 @@
 {% block title %}Graduator - Results{% endblock %}
 
 {% block content %}
-{{ session['requirements'] }}
-
+<h1>Class List: Best Options Highlited in Green</h1>
+<ul>
+{% for key, value in session['c2d'].items() %}
+	{% if value|length >= 2 %}
+		<font color ='green'><b><li>{{key}}: {{value}}</li></b></font>
+	{% else %}
+		<li>{{key}}: {{value}}</li>
+	{% endif %}
+{% endfor %}
+</ul>
 {% endblock %}
